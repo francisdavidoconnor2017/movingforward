@@ -7,6 +7,7 @@ const Button = styled.button`
 	color: #000;
 	padding: 15px 62px;
 	text-align: center;
+	font-family: 'Arial';
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;

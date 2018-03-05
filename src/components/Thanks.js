@@ -6,6 +6,7 @@ import '../rodalmodify.css';
 
 const Thankyou = styled.div`
 	color: #4caf50;
+	font-family: 'Arial';
 	font-size: 2.5em;
 	font-weight: bold;
 	vertical-align: middle;

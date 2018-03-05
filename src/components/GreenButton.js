@@ -11,6 +11,7 @@ const Button = styled.button`
 	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
+	font-family: 'Arial';
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 1px #111;
 	&:hover {

@@ -9,6 +9,7 @@ import RightSide from './RightSide';
 
 const Content = styled.div`
 	color: #fff;
+	font-family: 'Arial';
 `;
 
 const TextContent = styled.p`
