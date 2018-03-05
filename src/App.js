@@ -7,6 +7,12 @@ import logo from './assets/mwgLogoWhite.png';
 import background from './assets/OFC16_Cafe_018_1600.png';
 import './App.css';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './reducers/RootReducer';
+
+const store = createStore(rootReducer);
+
 const backgroundStyle = {
 	backgroundImage: 'url(' + background + ')',
 	minHeight: 900
@@ -20,13 +26,15 @@ class App extends Component {
 					<img src={logo} className="App-logo" alt="logo" />
 				</header>
 				<div style={backgroundStyle}>
-					<BrowserRouter>
-						<Switch>
-							<Route exact path="/" component={CallToAction} />
-							<Route path="/form" component={FormModal} />
-							<Route path="/thanks" component={Thanks} />
-						</Switch>
-					</BrowserRouter>
+					<Provider store={store}>
+						<BrowserRouter>
+							<Switch>
+								<Route exact path="/" component={CallToAction} />
+								<Route path="/form" component={FormModal} />
+								<Route path="/thanks" component={Thanks} />
+							</Switch>
+						</BrowserRouter>
+					</Provider>
 				</div>
 			</div>
 		);

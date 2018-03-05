@@ -1,0 +1,37 @@
+.Form-inputLine {
+	border: 1px solid #aaa;
+	width: 100%;
+	height: 30px;
+	margin: 0 5px 5px 5px;
+	padding: 5px;
+	background: #fff;
+}
+
+.Form-inputLineInvalid {
+	border: 1px solid #aaa;
+	border-bottom: 2px solid #911;
+	width: 100%;
+	height: 30px;
+	margin: 0 5px 5px 5px;
+	padding: 5px;
+	background: #fff;
+}
+
+.Form-inputLineTicked {
+	border: 1px solid #aaa;
+	width: 100%;
+	height: 30px;
+	margin: 0 5px 5px 5px;
+	padding: 5px;
+	background: #fff url('./assets/check.png') no-repeat right 10px center;
+}
+
+.Form-inputLine:focus {
+	box-shadow: 0px 0px 10px 1px #111;
+}
+.Form-inputLineInvalid:focus {
+	box-shadow: 0px 0px 10px 1px #911;
+}
+.Form-inputLineTicked:focus {
+	box-shadow: 0px 0px 10px 1px #00c94b;
+}
